@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; //2 колонки, первая занимает 1/4, вторая 3/4
+    width: 900px;
+    height: 500px;
+    background: #E5F1FB;
+    grid-column-gap: 5px; //зазор между колонками
+    .menu {
+        display: grid;
+        grid-template-rows: repeat(4, 40px);
+        background: #272D39;
+        border: 1px solid #99c0dd;
+        &_title {
+            font-size: 20px;
+            text-align: center;
+            background: none;
+            border: none;
+            outline: none;
+            color: #FFAA09;
+            margin-top: 10px;
+        }
+        &_item {
+            background: none;
+            border: none;
+            outline: none;
+            color: #FFFFFF;
+            font-size: 16px;
+            cursor: pointer;
+            &_active {
+                background: #FFAA09;
+            }
+        }
+    }
+    .catalog {
+        background: url(../img/confetti-1637197_1920.jpg) center (center / cover) no-repeat;
+        border: 1px solid #272D39;
+        .cards-pizza {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding: 15px;
+            .card {
+                background: #FFFFFF;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                &_img {
+                    width: 100%;
+                    height: 100px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                &_content {
+                    margin: 0 10px 0 10px;
+                    &_name {
+                        font-size: 16px;
+                    }
+                    &_descr {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                    &_weight {
+                        &-btn {
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+                            color: #272D39;
+                            &_active {
+                                background: #FFAA09;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                    &_buy {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-price {
+                            font-weight: 700;
+                        }
+                        &-plus {
+                            display: flex;
+                            align-items: center;
+                            width: 30px;
+                            height: 30px;
+                            background: #FFAA09;
+                            outline: none;
+                            border: none;
+                            border-radius: 5px;
+                            color: #FFFFFF;
+                            padding: 7px;
+                            cursor: pointer;
+                            span {
+                                font-size: 28px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cards-rolls {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding: 15px;
+            .card {
+                background: #FFFFFF;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                &_img {
+                    width: 100%;
+                    height: 100px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                &_content {
+                    margin: 0 10px 0 10px;
+                    &_name {
+                        font-size: 16px;
+                    }
+                    &_descr {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                    &_weight {
+                        &-btn {
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+                            color: #272D39;
+                            &_active {
+                                background: #FFAA09;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                    &_buy {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-price {
+                            font-weight: 700;
+                        }
+                        &-plus {
+                            display: flex;
+                            align-items: center;
+                            width: 30px;
+                            height: 30px;
+                            background: #FFAA09;
+                            outline: none;
+                            border: none;
+                            border-radius: 5px;
+                            color: #FFFFFF;
+                            padding: 7px;
+                            cursor: pointer;
+                            span {
+                                font-size: 28px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cards-burgers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding: 15px;
+            .card {
+                background: #FFFFFF;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                &_img {
+                    width: 100%;
+                    height: 100px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                &_content {
+                    margin: 0 10px 0 10px;
+                    &_name {
+                        font-size: 16px;
+                    }
+                    &_descr {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                    &_weight {
+                        &-btn {
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+                            color: #272D39;
+                            &_active {
+                                background: #FFAA09;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                    &_buy {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-price {
+                            font-weight: 700;
+                        }
+                        &-plus {
+                            display: flex;
+                            align-items: center;
+                            width: 30px;
+                            height: 30px;
+                            background: #FFAA09;
+                            outline: none;
+                            border: none;
+                            border-radius: 5px;
+                            color: #FFFFFF;
+                            padding: 7px;
+                            cursor: pointer;
+                            span {
+                                font-size: 28px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
